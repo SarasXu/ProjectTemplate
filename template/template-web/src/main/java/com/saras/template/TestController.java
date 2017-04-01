@@ -28,6 +28,8 @@ public class TestController {
         list.add(configProperty.getName());
         list.add("velocity");
         model.addAttribute("list", list);
+        logger.info("hello info：{}", list);
+        logger.error("hello error：{}", list);
         return "hello";
     }
 }
