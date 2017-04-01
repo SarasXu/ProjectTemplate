@@ -1,0 +1,2 @@
+# ProjectTemplate
+基于SpringBoot整合SpringMvc+Spring+Mybatis的maven基础项目模板
