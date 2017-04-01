@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/template.iml" filepath="$PROJECT_DIR$/template.iml" />
+      <module fileurl="file://$PROJECT_DIR$/template-assemble/template-assemble.iml" filepath="$PROJECT_DIR$/template-assemble/template-assemble.iml" />
+      <module fileurl="file://$PROJECT_DIR$/template-biz/template-biz.iml" filepath="$PROJECT_DIR$/template-biz/template-biz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/template-common/template-common.iml" filepath="$PROJECT_DIR$/template-common/template-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/template-dal/template-dal.iml" filepath="$PROJECT_DIR$/template-dal/template-dal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/template-facade/template-facade.iml" filepath="$PROJECT_DIR$/template-facade/template-facade.iml" />
+      <module fileurl="file://$PROJECT_DIR$/template-integration/template-integration.iml" filepath="$PROJECT_DIR$/template-integration/template-integration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/template-web/template-web.iml" filepath="$PROJECT_DIR$/template-web/template-web.iml" />
+    </modules>
+  </component>
+</project>

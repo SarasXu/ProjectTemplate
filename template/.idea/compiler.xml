@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="template-assemble" />
+        <module name="template-biz" />
+        <module name="template-common" />
+        <module name="template-dal" />
+        <module name="template-facade" />
+        <module name="template-integration" />
+        <module name="template-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="template" target="1.8" />
+      <module name="template-assemble" target="1.8" />
+      <module name="template-biz" target="1.8" />
+      <module name="template-common" target="1.8" />
+      <module name="template-dal" target="1.8" />
+      <module name="template-facade" target="1.8" />
+      <module name="template-integration" target="1.8" />
+      <module name="template-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
