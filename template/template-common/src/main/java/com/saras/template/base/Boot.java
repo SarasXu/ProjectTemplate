@@ -10,7 +10,7 @@ import org.springframework.boot.SpringApplication;
  */
 public class Boot {
 
-    public void run(Class clazz, String... args) {
+    public static void run(Class clazz, String... args) {
         long begin = System.currentTimeMillis();
         AppBoot boot = (AppBoot) clazz.getAnnotation(AppBoot.class);
         Apps.setProfileIfNotExists(boot.env());

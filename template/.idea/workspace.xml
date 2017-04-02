@@ -86,27 +86,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JSON.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.7/fastjson-1.2.7.jar!/com/alibaba/fastjson/JSON.class">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/template-assemble/src/main/java/com/saras/template/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="46" column="22" lean-forward="false" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+            <state relative-caret-position="176">
+              <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+              <folding>
+                <element signature="e#271#272#0" expanded="true" />
+                <element signature="e#298#299#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Boot.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template-common/src/main/java/com/saras/template/base/Boot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JSONUtil.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/net/minidev/json-smart/2.2.1/json-smart-2.2.1.jar!/net/minidev/json/JSONUtil.class">
+      <file leaf-file-name="SpringApplication.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.4.5.RELEASE/spring-boot-1.4.5.RELEASE.jar!/org/springframework/boot/SpringApplication.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="142">
+              <caret line="740" column="49" lean-forward="false" selection-start-line="740" selection-start-column="49" selection-end-line="740" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template-web/src/main/java/com/saras/template/TestController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="242">
@@ -115,16 +128,6 @@
                 <element signature="e#2290#2291#0" expanded="true" />
                 <element signature="e#2313#2314#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RedisTemplate.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.7.8.RELEASE/spring-data-redis-1.7.8.RELEASE.jar!/org/springframework/data/redis/core/RedisTemplate.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3344">
-              <caret line="108" column="38" lean-forward="false" selection-start-line="108" selection-start-column="25" selection-end-line="108" selection-end-column="38" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -147,7 +150,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/template-web/src/main/resources/config/logback-spring.xml" />
-        <option value="$PROJECT_DIR$/template-assemble/src/main/java/com/saras/template/Main.java" />
         <option value="$PROJECT_DIR$/template-web/src/main/resources/config/application.properties" />
         <option value="$PROJECT_DIR$/template-assemble/src/main/resources/generatorConfig.xml" />
         <option value="$PROJECT_DIR$/template-dal/pom.xml" />
@@ -165,6 +167,8 @@
         <option value="$PROJECT_DIR$/template-common/src/main/java/com/saras/template/service/impl/RedisServiceImpl.java" />
         <option value="$PROJECT_DIR$/template-common/src/main/java/com/saras/template/config/RedisTemplateConfig.java" />
         <option value="$PROJECT_DIR$/template-web/src/main/java/com/saras/template/TestController.java" />
+        <option value="$PROJECT_DIR$/template-common/src/main/java/com/saras/template/base/Boot.java" />
+        <option value="$PROJECT_DIR$/template-assemble/src/main/java/com/saras/template/Main.java" />
       </list>
     </option>
   </component>
@@ -1092,12 +1096,12 @@
       <updated>1491069513616</updated>
       <workItem from="1491069520463" duration="1380000" />
       <workItem from="1491105528664" duration="1120000" />
-      <workItem from="1491107244806" duration="6281000" />
+      <workItem from="1491107244806" duration="6666000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8781000" />
+    <option name="totallyTimeSpent" value="9166000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1064" extended-state="6" />
@@ -1152,22 +1156,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/template-dal/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template-assemble/src/main/resources/logback-spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="32" column="32" lean-forward="false" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template-dal/src/main/resources/generatorConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
@@ -1278,14 +1266,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/template-web/src/main/resources/config/logback-spring.xml" />
     <entry file="file://$PROJECT_DIR$/template-web/src/main/resources/plugins/generatorConfig.xml" />
-    <entry file="file://$PROJECT_DIR$/template-assemble/src/main/java/com/saras/template/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template-web/src/main/resources/config/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1586,6 +1566,33 @@
           <folding>
             <element signature="e#2290#2291#0" expanded="true" />
             <element signature="e#2313#2314#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.4.5.RELEASE/spring-boot-1.4.5.RELEASE.jar!/org/springframework/boot/SpringApplication.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="740" column="49" lean-forward="false" selection-start-line="740" selection-start-column="49" selection-end-line="740" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template-common/src/main/java/com/saras/template/base/Boot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template-assemble/src/main/java/com/saras/template/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding>
+            <element signature="e#271#272#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
           </folding>
         </state>
       </provider>
