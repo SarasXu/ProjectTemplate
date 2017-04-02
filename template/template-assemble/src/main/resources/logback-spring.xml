@@ -95,7 +95,7 @@
     <!-- 日志输出级别 -->
     <root level="INFO">
         <!-- 日志输出地点,输出一个就行 -->
-        <appender-ref ref="STDOUT"/>
+        <!--<appender-ref ref="STDOUT"/>-->
         <appender-ref ref="${appName}-info"/>
         <appender-ref ref="${appName}-error"/>
         <!--<appender-ref ref="FILE"/>-->

@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="EclipseCodeFormatter">
+    <option name="defaultSettings" value="true" />
+    <option name="formatter" value="ECLIPSE" />
+    <option name="id" value="1440517375955" />
+    <option name="name" value="default" />
+    <option name="pathToConfigFileJava" value="G:/编译环境配置/formatter.xml" />
+    <option name="selectedJavaProfile" value="Yi ji fu Convention" />
+    <option name="useOldEclipseJavaFormatter" value="true" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
