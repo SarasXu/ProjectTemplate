@@ -1,7 +1,9 @@
 package com.saras.template;
 
+import com.alibaba.fastjson.JSONObject;
 import com.google.common.collect.Lists;
 import com.saras.template.config.ConfigProperty;
+import com.saras.template.core.rabbitmq.RabbitMQSendService;
 import com.saras.template.entity.User;
 import com.saras.template.mapper.UserMapper;
 import org.slf4j.Logger;
@@ -36,24 +38,36 @@ public class TestController {
     private TransactionTemplate transactionTemplate;
     @Autowired
     private RedisTemplate redisTemplate;
+    @Autowired
+    private RabbitMQSendService rabbitMQSendService;
 
     @RequestMapping("hello")
     public String hello(Model model) {
         List<String> list = Lists.newArrayList();
         list.add("hello");
+        //多环境测试
         list.add(configProperty.getName());
         list.add("velocity");
+        //编程式事务测试
         doBiz("no");
-        ValueOperations<String, String> valueOperations = redisTemplate.opsForValue();
-        valueOperations.set("yyyyyyyuuuuuu", "667787889");
+        //redis测试
+//        ValueOperations<String, String> valueOperations = redisTemplate.opsForValue();
+//        valueOperations.set("yyyyyyyuuuuuu", "667787889");
+        //mybatis测试
         User user = userMapper.selectByPrimaryKey(1l);
+        //线程池测试
         taskExecutor.execute(() -> logger.info("这里是线程池中的多线程"));
         logger.info("user：{}", user);
 //		logger.info(valueOperations.get("one"));
         model.addAttribute("list", list);
+        //日志分类打印测试
         logger.info("hello info：{}", list);
         logger.warn("hello warn：{}", list);
         logger.error("hello error：{}", list);
+        //rabbitMQ测试
+        String message = JSONObject.toJSONString(user);
+        rabbitMQSendService.sendMsg(message);
+
         return "hello";
     }
 
