@@ -142,26 +142,6 @@
             <url>http://118.178.134.46:8001/nexus/content/repositories/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
-    <!--<profiles>-->
-    <!--<profile>-->
-    <!--<id>dph-nexus</id>-->
-    <!--<activation>-->
-    <!--<activeByDefault>true</activeByDefault>-->
-    <!--</activation>-->
-    <!--<distributionManagement>-->
-    <!--<repository>-->
-    <!--<id>dph-nexus</id>-->
-    <!--<name>dph-nexus</name>-->
-    <!--<url>http://118.178.134.46:8001/nexus/content/groups/public/</url>-->
-    <!--</repository>-->
-    <!--&lt;!&ndash;<snapshotRepository>&ndash;&gt;-->
-    <!--&lt;!&ndash;<id>dph-nexus-snapshot</id>&ndash;&gt;-->
-    <!--&lt;!&ndash;<name>Internal snapshot Repository</name>&ndash;&gt;-->
-    <!--&lt;!&ndash;<url>http://118.178.134.46:8001/nexus/content/repositories/snapshots/</url>&ndash;&gt;-->
-    <!--&lt;!&ndash;</snapshotRepository>&ndash;&gt;-->
-    <!--</distributionManagement>-->
-    <!--</profile>-->
-    <!--</profiles>-->
 
     <modules>
         <module>template-biz</module>
