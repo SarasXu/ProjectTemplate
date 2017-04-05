@@ -1,7 +1,7 @@
 package com.saras.template;
 
 import com.alibaba.dubbo.config.annotation.Service;
-import com.saras.template.core.dubbo.DubboRemoteProxyFacotry;
+import com.saras.template.core.dubbo.DubboRemoteProxyFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,7 @@ public class TestFacadeImpl implements TestFacade {
     private final static Logger logger = LoggerFactory.getLogger(TestFacadeImpl.class);
 
     @Autowired
-    private DubboRemoteProxyFacotry dubboRemoteProxyFacotry;
+    private DubboRemoteProxyFactory dubboRemoteProxyFacotry;
 
     @Override
     public String test(String message) {

@@ -21,8 +21,8 @@ import java.util.Map;
  * saras_xu@163.com 2017-04-05 15:46 创建
  */
 @Configuration
-public class DubboRemoteProxyFacotry implements ApplicationContextAware {
-    private static final Logger logger = LoggerFactory.getLogger(DubboRemoteProxyFacotry.class.getName());
+public class DubboRemoteProxyFactory implements ApplicationContextAware {
+    private static final Logger logger = LoggerFactory.getLogger(DubboRemoteProxyFactory.class.getName());
     private ApplicationContext applicationContext;
     private static volatile Map<Key, ReferenceConfig> cache = Maps.newConcurrentMap();
     private static final int PROVIDER_TIME_OUT = -1;
@@ -32,6 +32,7 @@ public class DubboRemoteProxyFacotry implements ApplicationContextAware {
         this.applicationContext = applicationContext;
     }
 
+    @SuppressWarnings("unchecked")
     public <T> T getProxy(Class<T> clazz, String group, String version, int timeout) {
         if ((Strings.isNullOrEmpty(version)) || (clazz == null)) {
             throw new RuntimeException("获取dubbo服务代理时版本号和类不能为空");
@@ -42,9 +43,9 @@ public class DubboRemoteProxyFacotry implements ApplicationContextAware {
             return (T) cachedReferenceConfig.get();
         }
         if (this.applicationContext == null) {
-            throw new RuntimeException("请配置DubboRemoteProxyFacotry到spring容器中");
+            throw new RuntimeException("请配置DubboRemoteProxyFactory到spring容器中");
         }
-        synchronized (DubboRemoteProxyFacotry.class) {
+        synchronized (DubboRemoteProxyFactory.class) {
             cachedReferenceConfig = cache.get(key);
             if (cachedReferenceConfig == null) {
                 ApplicationConfig applicationConfig = this.applicationContext.getBean(ApplicationConfig.class);
@@ -88,15 +89,15 @@ public class DubboRemoteProxyFacotry implements ApplicationContextAware {
 
     static {
         ShutdownHooks.addShutdownHook(() -> {
-            for (ReferenceConfig referenceConfig : DubboRemoteProxyFacotry.cache.values()) {
+            for (ReferenceConfig referenceConfig : DubboRemoteProxyFactory.cache.values()) {
                 try {
                     referenceConfig.destroy();
                 } catch (Exception e) {
-                    DubboRemoteProxyFacotry.logger.error("{}销毁异常", referenceConfig);
+                    DubboRemoteProxyFactory.logger.error("{}销毁异常", referenceConfig);
                 }
             }
-            DubboRemoteProxyFacotry.cache.clear();
-        }, "DubboRemoteProxyFacotryShutdownHook");
+            DubboRemoteProxyFactory.cache.clear();
+        }, "DubboRemoteProxyFactoryShutdownHook");
     }
 
     private static class Key {
