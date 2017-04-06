@@ -1,3 +1,4 @@
 /template/*.iml
 /template/*.idea
 /template/*.class
+/template/*/target/*
